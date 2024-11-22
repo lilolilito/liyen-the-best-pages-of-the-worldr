@@ -1,0 +1,20 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+section {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    animation: slideIn 1s ease-in-out;
+}
+h2 {
+    color: #8e6b5b;
+    margin-top: 0;
+    font-size: 2em;
+    border-bottom: 2px solid #8e6b5b;
+    padding-bottom: 10px;
+}
