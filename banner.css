@@ -1,0 +1,19 @@
+.banner {
+    background-image: url(https://spabogota.com.co/wp-content/uploads/2021/11/3-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+.banner h1 {
+    font-size: 4em;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
