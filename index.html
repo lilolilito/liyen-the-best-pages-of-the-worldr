@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liyen Beauty - Spa en Cartagena</title>
     <link rel="Stylesheet" href="index.css">
+    <link rel="Stylesheet" href="nav.css">
+    <link rel="Stylesheet" href="footer.css">
+    <link rel="Stylesheet" href="forms.css">
+    <link rel="Stylesheet" href="banner.css">
+    <link rel="Stylesheet" href="button.css">
+    <link rel="Stylesheet" href="card.css">
 
   <!--  <style> 
         body {
@@ -129,9 +135,11 @@
         .service-card:hover {
             transform: scale(1.05);
         }
+
         .hidden {
             display: none;
         }
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -166,7 +174,7 @@
                 <li><a href="#prices">Precios</a></li>
                 <li><a href="#rewiews">Reseñas de Clientes</a></li>
                 <li><a href="#contact">Contacto</a></li>
-                <li><a href="#register" onclick="showRegister()">Registrarse</a></li>
+                <li><a href="registro.html" onclick="showRegister()">Registrarse</a></li>
                 <li><a href="#login" onclick="showLogin()">Iniciar Sesión</a></li>
             </ul>
         </nav>
@@ -218,38 +226,62 @@
                 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 20px;">
             
                     <div style="flex: 1 1 300px; margin: 15px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
-                        <img src=https://www.clinicaphysis.com/wp-content/uploads/2022/10/masaje-descontracturante-valencia.png alt="Masaje Relajante" style="width: 100px; border-radius: 8px; margin-bottom: 10px;">
+                        <img src="https://www.clinicaphysis.com/wp-content/uploads/2022/10/masaje-descontracturante-valencia.png" alt="Masaje Relajante" style="width: 100px; border-radius: 8px; margin-bottom: 10px;">
                         <h3>Masaje Relajante</h3>
                         <p>Alivia el estrés y la tensión muscular, proporcionando una sensación de calma y bienestar.</p>
                         <button onclick="toggleDetails('details-masaje')" style="background-color: #8e6b5b; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Ver Más</button>
                         <div id="details-masaje" style="display: none; margin-top: 10px; background: #f1f1f1; padding: 10px; border-radius: 5px;">
-                            
                             <p><strong>Duración:</strong> 60 min</p>
-                            <p>Este masaje combina técnicas de presión y estiramiento para aliviar la tensión muscular y mejorar la circulación.</p>
+                            
+                       
+                    <p>Este masaje combina técnicas de presión y estiramiento para aliviar la tensión muscular y mejorar la circulación.</p>
                         </div>
+                    
+                    
                     </div>
-            
+                    
                     <div style="flex: 1 1 300px; margin: 15px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
-                        <img src=https://staticnew-prod.topdoctors.cl/files/Image/large/de342ede9607f40ec9ff6470b7dd5578.jpg alt="Facial Hidratante" style="width: 100px; border-radius: 8px; margin-bottom: 10px;">
+                        <img src="https://staticnew-prod.topdoctors.cl/files/Image/large/de342ede9607f40ec9ff6470b7dd5578.jpg" alt="Facial Hidratante" style="width: 100px; border-radius: 8px; margin-bottom: 10px;">
                         <h3>Facial Hidratante</h3>
-                        <p>Tratamiento facial que proporciona hidratación profunda y luminosidad a tu piel.</p>
+                        
+                        
+                    <p>Tratamiento facial que proporciona hidratación profunda y luminosidad a tu piel.</p>
                         <button onclick="toggleDetails('details-facial')" style="background-color: #8e6b5b; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Ver Más</button>
                         <div id="details-facial" style="display: none; margin-top: 10px; background: #f1f1f1; padding: 10px; border-radius: 5px;">
                             <p><strong>Duración:</strong> 45 min</p>
                             <p>Este tratamiento facial utiliza productos hidratantes que restauran la luminosidad y la suavidad de la piel.</p>
-                        </div>
                     </div>
-            
+                    </div>
+                    
                     <div style="flex: 1 1 300px; margin: 15px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
-                        <img src=https://masajesbogota.com/wp-content/uploads/2021/07/hands-massaging-female-abdomen-therapist-applying-pressure-on-belly-2-min-scaled.jpg alt="Pre y Post Operatorios" style="width: 100px; border-radius: 8px; margin-bottom: 10px;">
+                        
+                      
+                    <img src="https://masajesbogota.com/wp-content/uploads/2021/07/hands-massaging-female-abdomen-therapist-applying-pressure-on-belly-2-min-scaled.jpg" alt="Pre y Post Operatorios" style="width: 100px; border-radius: 8px; margin-bottom: 10px;">
                         <h3>Pre y Post Operatorios</h3>
-                        <p>Una experiencia maravillosa para entregar tus mejores resultados antes y despues de una operacion .</p>
-                        <button onclick="toggleDetails('details-manicura')" style="background-color: #8e6b5b; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Ver Más</button>
-                        <div id="details-manicura" style="display: none; margin-top: 10px; background: #f1f1f1; padding: 10px; border-radius: 5px;">
-                            <p><strong>Duración:</strong> 7 sesiones de 1 hora y 30 min</p>
-                            <p>Antes del tratamiento, consulta con nuestros especialistas, hidrátate y evita alcohol y productos irritantes. Después, mantén tu piel hidratada, evita el sol y las actividades intensivas, y sigue las recomendaciones para una óptima recuperación. </p>
-                        </div>
+                        
+                       
+                    <p>Una experiencia maravillosa para entregar tus mejores resultados antes y después de una operación.</p>
+                        <button onclick="toggleDetails('details-pre-post-operatorios')" style="background-color: #8e6b5b; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Ver Más</button>
+                        <div id="details-pre-post-operatorios" style="display: none; margin-top: 10px; background: #f1f1f1; padding: 10px; border-radius: 5px;">
+                            
+                       
+                    <p><strong>Duración:</strong> 7 sesiones de 1 hora y 30 min</p>
+                            <p>Antes del tratamiento, consulta con nuestros especialistas, hidrátate y evita alcohol y productos irritantes. Después, mantén tu piel hidratada, evita el sol y las actividades intensivas, y sigue las recomendaciones para una óptima recuperación.</p>
+                        
+                        </d
                     </div>
+                    </div>
+                    
+                    <script>
+                        function toggleDetails(id) {
+                            var details = document.getElementById(id);
+                            if (details.style.display === "none" || details.style.display === "") {
+                                details.style.display = "block";
+                            } else {
+                                details.style.display = "none";
+                            }
+                        }
+                    </script>
             
                 </div>
             </section>
@@ -257,8 +289,11 @@
             <script>                for (letasync (params) => {  }index = 0; index < array.length; index++) {
                     const element = array[index];
                     function
-                } toggleDetails(id) {
-                    const details = document.getElementById(id); details.style.display = details.style.display === 'none' ? 'block' : 'none';                            </script>
+                }    function toggleDetails(id) {
+    const details = document.getElementById(id);
+    details.style.display = details.style.display === 'none' ? 'block' : 'none';
+}
+                     </script>
         <section id="installations" style="display: flex; align-items: center; padding: 40px; background: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
            <div style="flex: 1; padding: 20px;">
         <h2 style="color: #8e6b5b;">Nuestras Instalaciones</h2>
@@ -348,7 +383,7 @@
             </div>
         </section>
         
-        <section id="register" class="hidden">
+ <!--  <section id="register" class="hidden">
     <h2>Registro</h2>
     <form id="registerForm" autocomplete="on">
         <label for="firstName">Nombres:</label>
@@ -373,7 +408,7 @@
         <button type="submit">Registrar</button>
     </form>
     <p>¿Ya tienes una cuenta? <a href="#login" onclick="showLogin()">Inicia sesión aquí</a>.</p>
-</section>
+</section> -->
 
 <section id="login" class="hidden">
     <h2>Inicio de Sesión</h2>
@@ -412,7 +447,8 @@
         localStorage.setItem('userData', JSON.stringify(userData));
         alert('Registro exitoso! Puedes iniciar sesión ahora.');
         showLogin();
-    });
+    }
+);
 
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -427,7 +463,9 @@
         }    });
     function showLogin() {
         document.getElementById('login').classList.remove('hidden');
-        document.getElementById('register').classList.add('hidden')    }
+        docu
+        document.getElementById('register').classList.add('hidden')   
+     }
     function showRegister() {
         document.getElementById('register').classList.remove('hidden');
         document.getElementById('login').classList.add('hidden');
@@ -435,4 +473,5 @@
 </script>
 
 </body>
+
 </html>
